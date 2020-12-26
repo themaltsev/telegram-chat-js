@@ -136,7 +136,7 @@ init(){
           let Text = r.data.result.pop().message.text
 
             let tplItemMenager = `<div class="chat__body__item chat__body__item__manager">
-            <span class="chat__body__item__user">Вы</span>
+            <span class="chat__body__item__user">Менеджер</span>
             <span class="chat__body__item__text">${Text}</span>
             <i class="chat__body__item__time">${timeNow}</i></div>`;
             
