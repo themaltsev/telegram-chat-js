@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HEllo MIR</h1>
+
+    <link rel="stylesheet" href="telegram-chat/telega-chat.css">
+    <script src="telegram-chat/axios.min.js"></script>
+    <script src="telegram-chat/telega-chat.js"></script>
+
+    <script>
+        //триггер
+        //например
+
+        document.querySelector('h1').addEventListener('click',e=>{
+
+            console.log('триггер');
+
+            new TelegaChat().open()
+
+        })
+
+    </script>
+
+</body>
+</html>
