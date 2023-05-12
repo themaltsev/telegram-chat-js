@@ -1,3 +1,6 @@
+//Стили пишите сами!!!!
+
+
 window.$ = (el) => {
   if(document.querySelector(el) !== null) return document.querySelector(el)
   // else console.warn(`${el} не найдем в дом дереве`);
