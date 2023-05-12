@@ -1,6 +1,5 @@
 //Стили пишите сами!!!!
 //Картинки и звуки качайте сами!
-
 window.soundPush = (url) => {
 
     let audio = new Audio(); // Создаём новый элемент Audio
@@ -25,9 +24,9 @@ function getRandomInt(max) {
   
   let timeNow = new Date().toLocaleTimeString();
   
-  export const token = `1363266801:AAHWocchldFbEF4Po2vegB7xKg0t9gjHw3w`;
+  export const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`;
   
-  export const chatId = `144065722`;
+  export const chatId = `Чат айди как получить есть на ютубе Пример: 88888888`;
   
   let startChat = false
   
@@ -223,8 +222,6 @@ function getRandomInt(max) {
     }
   }
   
-
-
 
 //Ниже закоментирована старая версия 
 
