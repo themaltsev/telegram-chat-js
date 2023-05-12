@@ -25,8 +25,8 @@ function getRandomInt(max) {
   let timeNow = new Date().toLocaleTimeString();
   
   export const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`;
-  
-  export const chatId = `Чат айди как получить есть на ютубе Пример: 88888888`;
+ 
+  export const chatId = `Чат айди Пример: 88888888`;  //получаем при вызове https://api.telegram.org/bot{token}/getupdates в браузере
   
   let startChat = false
   
