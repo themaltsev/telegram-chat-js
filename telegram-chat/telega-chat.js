@@ -1,5 +1,17 @@
 //Стили пишите сами!!!!
 //Картинки и звуки качайте сами!
+
+
+window.$ = (el) => {
+  if(document.querySelector(el) !== null) return document.querySelector(el)
+  // else console.warn(`${el} не найдем в дом дереве`);
+};
+
+window.$$ = (el) => {
+  if(document.querySelectorAll(el) !== null) return document.querySelectorAll(el)
+};
+
+
 window.soundPush = (url) => {
 
     let audio = new Audio(); // Создаём новый элемент Audio
@@ -24,9 +36,9 @@ function getRandomInt(max) {
   
   let timeNow = new Date().toLocaleTimeString();
   
-  export const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`;
+   const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`;
  
-  export const chatId = `Чат айди Пример: 88888888`;  //получаем при вызове https://api.telegram.org/bot{token}/getupdates в браузере
+   const chatId = `Чат айди Пример: 88888888`;  //получаем при вызове https://api.telegram.org/bot{token}/getupdates в браузере
   
   let startChat = false
   
@@ -58,7 +70,7 @@ function getRandomInt(max) {
   </div>`;
   
   
-  export class TelegaChat {
+   class TelegaChat {
     open() {
   
       if (window.innerWidth < 768) $("body").classList.add('overflow__hidden')
