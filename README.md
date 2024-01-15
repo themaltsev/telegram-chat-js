@@ -16,3 +16,5 @@
 https://www.youtube.com/watch?v=qFpcITfjpe8&t=523s
 
 Рабочий пример на моём сайте 👉 https://fixdevice.pro/
+
+by Aleksandr Maltsev
