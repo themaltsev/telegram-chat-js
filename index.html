@@ -13,15 +13,12 @@
     <script src="telegram-chat/telega-chat.js"></script>
 
     <script>
-        //триггер
-        //например
-
-        document.querySelector('h1').addEventListener('click',e=>{
-
-            console.log('триггер');
-
-            new TelegaChat().open()
-
+        //например триггер клик по h1 измени на своё, кнопку или событие 
+        
+        document.querySelector('h1')
+            .addEventListener('click',e=>{
+                console.log('Открываем чат');
+                new TelegaChat().open()
         })
 
     </script>
