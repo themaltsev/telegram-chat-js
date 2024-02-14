@@ -44,7 +44,7 @@ window.$ = (el) => {
     
     let lastMessId , FirstMessId, newMessId, checkReply, Timer , count;
 
-    const idStart = getIp() || getRandomInt(999)
+    const idStart = this.getIp() || getRandomInt(999)
     
     // Имя менагера
     const manager = 'Александр'
