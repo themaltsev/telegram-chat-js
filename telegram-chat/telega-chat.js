@@ -44,7 +44,9 @@ window.$ = (el) => {
     
     let lastMessId , FirstMessId, newMessId, checkReply, Timer , count;
 
-    const idStart = this.getIp() || getRandomInt(999)
+    const idStart = getRandomInt(999)
+    
+    this.getIp()
     
     // Имя менагера
     const manager = 'Александр'
@@ -138,7 +140,9 @@ window.$ = (el) => {
     
       
       getIp(){
-        axios.get(`https://fixdevice.pro/get-ip`).then(r=>r.data)
+        axios.get(`https://fixdevice.pro/get-ip`).then(r=>{
+          isStart = r.data
+        })
       }
     
       submit() {
