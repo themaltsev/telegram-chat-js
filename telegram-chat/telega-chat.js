@@ -35,11 +35,8 @@ let lastMessId, FirstMessId, newMessId, checkReply, Timer, count;
 let idStart = getRandomInt(999)
 
 
-
-
-
 // Имя менагера
-const manager = 'Александр'
+const manager = 'Менеджер'
 
 let tpl = `<div class="chat__wrap">
     <div class="chat__title">Онлайн-чат
@@ -101,8 +98,6 @@ class TelegaChat {
       lastMessId = r.data.result[r.data.result.length - 1].message.message_id;
       FirstMessId = lastMessId
     })
-
-    
 
     this.deleteItem()
   }
@@ -222,6 +217,7 @@ class TelegaChat {
 }
 
 
+// Если нужно отправлять сообщения повторно 
 if (localStorage.getItem("historyMessages")) {
   axios.get(`https://api.telegram.org/bot${token}/getupdates`)
     .then((r) => {
