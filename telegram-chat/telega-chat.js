@@ -32,7 +32,7 @@ let startChat = false
 
 let lastMessId, FirstMessId, newMessId, checkReply, Timer, count;
 
-const idStart = getRandomInt(999)
+let idStart = getRandomInt(999)
 
 // Имя менагера
 const manager = 'Александр'
