@@ -160,7 +160,7 @@ window.$ = (el) => {
           $(".chat__body").scrollTop = 100000;
     
           axios.get(
-            `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=Юзер:${idStart}
+            `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=USER:${idStart}
             ${val}`
           );
     
