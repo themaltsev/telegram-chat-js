@@ -28,15 +28,24 @@ function getRandomInt(max) {
 let timeNow = new Date().toLocaleTimeString();
 const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`; // Получаем тут https://t.me/BotFather
 const chatId = `Чат айди Пример: 88888888`;  //получаем при вызове https://api.telegram.org/bot{token}/getupdates в браузере
+
+
 let startChat = false
 
 let lastMessId, FirstMessId, newMessId, checkReply, Timer, count;
 
 let idStart = getRandomInt(999)
 
-if (localStorage.getItem("historyMessages")) {
-  let Timer2 = setInterval(() => new TelegaChat().checkResponse(), 3000);
-}
+
+
+// if (localStorage.getItem("historyMessages")) {
+//   axios.get(`https://api.telegram.org/bot${token}/getupdates`)
+//     .then((r) => {
+//       lastMessId = r.data.result[r.data.result.length - 1].message.message_id;
+//       FirstMessId = lastMessId
+//       let Timer2 = setInterval(() => new TelegaChat().checkResponse(), 3000);
+//     })
+// }
 
 // Имя менагера
 const manager = 'Александр'
@@ -96,16 +105,11 @@ class TelegaChat {
     }, 1000);
 
 
-    axios
-      .get(`https://api.telegram.org/bot${token}/getupdates`)
-
-      .then((r) => {
-        lastMessId = r.data.result[r.data.result.length - 1].message.message_id;
-        FirstMessId = lastMessId
-      })
-      .catch(r => {
-        return ``
-      })
+    axios.get(`https://api.telegram.org/bot${token}/getupdates`)
+    .then((r) => {
+      lastMessId = r.data.result[r.data.result.length - 1].message.message_id;
+      FirstMessId = lastMessId
+    })
 
     this.deleteItem()
   }
@@ -189,7 +193,7 @@ class TelegaChat {
 
         newMessId = resLastMess.message_id;
 
-        // console.log(FirstMessId, lastMessId , newMessId, checkReply);
+        console.log(FirstMessId, lastMessId , newMessId, checkReply);
 
         if (newMessId > lastMessId && checkReply) {
 
