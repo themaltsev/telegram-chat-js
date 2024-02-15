@@ -46,8 +46,6 @@ window.$ = (el) => {
 
     const idStart = getRandomInt(999)
     
-    this.getIp()
-    
     // Имя менагера
     const manager = 'Александр'
     
@@ -116,7 +114,7 @@ window.$ = (el) => {
           })
     
         this.deleteItem()
-        
+        this.getIp()
       }
     
       close() {
@@ -141,7 +139,7 @@ window.$ = (el) => {
       
       getIp(){
         axios.get(`https://fixdevice.pro/get-ip`).then(r=>{
-          isStart = r.data
+          idStart = r.data
         })
       }
     
