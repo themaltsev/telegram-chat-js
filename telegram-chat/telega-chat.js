@@ -73,6 +73,8 @@ window.$ = (el) => {
     
      class TelegaChat {
       open() {
+
+        this.getIp()
     
         if (window.innerWidth < 768) $("body").classList.add('overflow__hidden')
     
@@ -114,7 +116,6 @@ window.$ = (el) => {
           })
     
         this.deleteItem()
-        this.getIp()
       }
     
       close() {
@@ -138,9 +139,7 @@ window.$ = (el) => {
     
       
       getIp(){
-        axios.get(`https://fixdevice.pro/get-ip`).then(r=>{
-          idStart = r.data
-        })
+        axios.get(`https://fixdevice.pro/get-ip`).then(r=>idStart = r.data)
       }
     
       submit() {
