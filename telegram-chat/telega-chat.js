@@ -208,7 +208,7 @@ class TelegaChat {
 
           this.deleteItem()
 
-          soundPush("/sound/get-whatsapp.mp3");
+          // soundPush("/sound/get-whatsapp.mp3");
 
           localStorage.setItem("historyMessages", $(".chat__body").innerHTML);
 
@@ -217,9 +217,6 @@ class TelegaChat {
           lastMessId = newMessId
 
         }
-      })
-      .catch(r => {
-        return ``
       })
   }
 }
