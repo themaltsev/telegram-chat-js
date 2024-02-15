@@ -36,7 +36,7 @@ window.$ = (el) => {
     
     let timeNow = new Date().toLocaleTimeString();
     
-    const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`;
+    const token = `Тут Токет! Пример: 136000001:AAHWocchldFdfsdfsdgdfkghdkflgj`; // Получаем тут https://t.me/BotFather
    
     const chatId = `Чат айди Пример: 88888888`;  //получаем при вызове https://api.telegram.org/bot{token}/getupdates в браузере
     
