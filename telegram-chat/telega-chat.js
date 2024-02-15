@@ -55,7 +55,7 @@ window.$ = (el) => {
     </div>
     <div class="chat__body">
     <div class="chat__body__item chat__body__item__manager">
-    <img class="chat__body__item__user__icon cards__theme" src="img/refs/avatars/ava.png" alt="аватарка менеджера">
+    <img class="chat__body__item__user__icon cards__theme" src="./telegram-chat/user.svg" alt="аватарка менеджера">
     <span class="chat__body__item__user">${manager} на связи 🤙</span>
     <span class="chat__body__item__text">Салют! Какой вопрос?</span>
     <i class="chat__body__item__time">${timeNow}</i>
@@ -65,7 +65,7 @@ window.$ = (el) => {
         <div class="chat__input__message">
             <textarea rows="1" wrap="on" type="text" class="chat__main__input" aria-label="Напишите сообщение" placeholder="Напишите сообщение" required ></textarea>
         </div>
-        <img class="chat__input__submit" src="img/icons/sent.svg" alt="Отправить" />
+        <img class="chat__input__submit" src="telegram-chat/angle-up.svg" alt="Отправить" />
     </div>
     
     </div>`;
@@ -149,7 +149,7 @@ window.$ = (el) => {
           $('.chat__main__input').classList.remove('validate__error')
           let tplItemClient = `<div class="chat__body__item chat__body__item__client">
           <div class="btm__close chat__body__item__delete cards__theme">×</div>
-          <img class="chat__body__item__user__icon cards__theme" src="img/icons/user.svg" alt="аватарка user">
+          <img class="chat__body__item__user__icon cards__theme" src="./telegram-chat/user.svg" alt="аватарка user">
         <span class="chat__body__item__user">Вы</span>
         <span class="chat__body__item__text">${val}</span>
         <i class="chat__body__item__time">${timeNow}</i></div>`;
@@ -213,7 +213,7 @@ window.$ = (el) => {
     
               let tplItemMenager = `<div class="chat__body__item chat__body__item__manager">
               <div class="btm__close chat__body__item__delete cards__theme">×</div>
-              <img class="chat__body__item__user__icon cards__theme" src="img/refs/avatars/ava.png" alt="аватарка менеджера">
+              <img class="chat__body__item__user__icon cards__theme" src="./telegram-chat/user.svg" alt="аватарка менеджера">
               <span class="chat__body__item__user">${manager}</span>
                 <span class="chat__body__item__text">${Text}</span>
                 <i class="chat__body__item__time">${timeNow}</i></div>`;
