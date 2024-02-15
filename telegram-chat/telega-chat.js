@@ -35,7 +35,7 @@ let lastMessId, FirstMessId, newMessId, checkReply, Timer, count;
 let idStart = getRandomInt(999)
 
 if (localStorage.getItem("historyMessages")) {
-  let Timer2 = setInterval(() =>  TelegaChat().checkResponse(), 3000);
+  let Timer2 = setInterval(() => new TelegaChat().checkResponse(), 3000);
 }
 
 // Имя менагера
