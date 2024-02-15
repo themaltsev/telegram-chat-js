@@ -34,6 +34,10 @@ let lastMessId, FirstMessId, newMessId, checkReply, Timer, count;
 
 let idStart = getRandomInt(999)
 
+if (localStorage.getItem("historyMessages")) {
+  let Timer2 = setInterval(() =>  TelegaChat().checkResponse(), 3000);
+}
+
 // Имя менагера
 const manager = 'Александр'
 
@@ -164,11 +168,6 @@ class TelegaChat {
     this.deleteItem()
 
     Timer = setInterval(() => this.checkResponse(), 3000);
-
-    if (typeof ym === "function" && startChat === false) {
-      ym(49104928, "reachGoal", "start__chat");
-      startChat = true
-    }
 
     $(".chat__main__input").value = ``
 
