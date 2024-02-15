@@ -139,7 +139,9 @@ window.$ = (el) => {
     
       
       getIp(){
-        axios.get(`https://fixdevice.pro/get-ip`).then(r=>idStart = r.data)
+        axios.get(`https://fixdevice.pro/get-ip`).then(r=>{
+          if (r.data.length > 8 && r.data != 'undefined' ) idStart = r.data 
+        })
       }
     
       submit() {
